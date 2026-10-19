@@ -1,6 +1,12 @@
 name: generate animation
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - README.md
+      - .github/workflows/snake.yml
   # 定时触发 - 每天北京时间晚上 20 点执行一次
   # UTC 12:00 = UTC+8 20:00
   schedule:
